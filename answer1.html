@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .important{
+         height: 20px;
+         width: 120px;
+         margin-top:10px;
+         margin-bottom:10px;
+         background-color: blue;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="john">
+        <input type="text" id="name">
+        <div class="important"></div>
+        <div class="keenct"></div>
+        <div class="important"></div>
+    </div>
+    <script type="text/javascript">
+        let inputt = document.querySelector("#name");
+        console.log(inputt)
+        let important = document.querySelectorAll(".important");
+
+        inputt.addEventListener("focus",function(e){
+            console.log(important);
+
+            important.forEach((imp)=>{
+                // console.log(imp);
+                imp.classList.add( "shape");
+            })
+        })
+    </script>
+</body>
+</html>

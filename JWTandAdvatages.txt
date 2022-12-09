@@ -1,0 +1,11 @@
+Question 1 - what is JWT?
+ Answer - JWT stands for JSON Web-Token .
+          JWT  are most commonly used to identify an authenticated user.
+         They are issued by an authentication server and are consumed by the client-server (to secure its APIs). 
+
+Question 2 - Advantages of JWT
+Answer - These are three advantages of JWT
+1. JWTs are a standardized container format to encode user and client related information in a secure way.
+2. JWTs are not restricted to present session-like information about the authenticated user itself; they can also be used to delegate access to clients that act on behalf of the user
+3. JWTs allow for a more access model than cookies because JWTs can be limited in "scope" (what they allow the client to do) as well as time
+
